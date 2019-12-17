@@ -1,0 +1,37 @@
+@main-color: #c78030;
+@dark: #373737;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-family: "Roboto Slab";
+}
+
+.timer {
+	margin-top: 150px;
+	text-align: center;
+	&-title {
+		font-size: 36px;
+		color: @main-color;
+	}
+	&-action {
+		font-size: 24px;
+		color: black;
+	}
+	&-numbers {
+		margin-top: 40px;
+		font-size: 90px;
+		color: @main-color;
+		&:after {
+			content: '';
+			display: block;
+			width: 20%;
+			height: 1px;
+			background-color: @main-color;
+			margin: 0 auto;
+			margin-top: 4px;
+		}
+	}
+}
